@@ -5,7 +5,7 @@ WORKDIR /src
 COPY . .
 RUN hugo --gc --minify
 
-FROM nginx:stable-alpine as dist
+FROM nginx:stable-alpine-slim as dist
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /src/public /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
