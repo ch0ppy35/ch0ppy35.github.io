@@ -1,0 +1,17 @@
+baseURL = 'https://mmiller.zip/'
+languageCode = 'en-us'
+title = 'mmiller.zip'
+theme = 'hugo-theme-nix'
+
+disableKinds = ["taxonomy", "term"]
+
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+
+[params]
+  Name = "Mike Miller"
+  HeaderUsername = "mmiller"
+  HeaderHostname = "den01"
+  About = "Mike is a seasoned Platform Engineer in the software industry, with a diverse range of skills and expertise. He is adept at crafting effective technical solutions and has a deep understanding of Kubernetes, Golang, and cloud-native architectures."
+  ProfilePicture = "/mike_gopher.png"
