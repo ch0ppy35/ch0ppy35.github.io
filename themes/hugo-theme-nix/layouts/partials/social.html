@@ -1,3 +1,6 @@
+{{ with .Site.Params.WebSite }}
+<a href="{{.}}" title="WebSite"><i class="fas fa-globe fa-3x" aria-hidden="true"></i></a>
+{{ end }}
 {{ with .Site.Params.GnuPGFingerprint }}
 <a href="https://pgp.key-server.io/pks/lookup?op=vindex&search=0x{{.}}" title="GPG"><i class="fas fa-unlock-alt fa-3x" aria-hidden="true"></i></a>
 {{ end }}

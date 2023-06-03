@@ -4,37 +4,19 @@
 			<a class="navbar-brand" id="green-terminal" href='{{ .Site.BaseURL | absLangURL }}'>
 				{{ .Site.Params.HeaderUsername }}@{{ .Site.Params.HeaderHostname }} ~ $
 			</a>
-			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" 
+			<!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" 
 					aria-controls="navbar-collapse-1" aria-expanded="false">
 				<span class="visually-hidden">Toggle navigation</span>
 				<span class="navbar-toggler-icon"></span>
-			</button>
+			</button> -->
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="navbar-collapse-1">
 				<ul class="nav navbar-nav ms-auto">
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href='{{ .Site.BaseURL | absLangURL }}'>
 							/home/{{ .Site.Params.HeaderUsername }}</a>
-					</li>
-					{{ if .IsTranslated }}
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" 
-								title="{{ .Language.LanguageName }}" aria-expanded="false">
-							LANG={{ .Language.Lang }}
-							<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-							{{ range .Translations }}
-							<li>
-								<a class="dropdown-item" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
-									export LANG={{ .Language.Lang }}
-								</a>
-							</li>
-							{{ end }}
-						</ul>
-					</li>
-					{{ end }}
+					</li> -->
 					{{ range .Site.Menus.header }}
 					{{ $name := lower .Name }}
 					<li class="nav-item dropdown">
